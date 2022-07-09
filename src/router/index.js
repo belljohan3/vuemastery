@@ -10,7 +10,7 @@ const routes = [
     component: EventList
   },
   {
-    path: '/events/:id',
+    path: '/event/:id',
     name: 'EventDetails',
     props: true,
     component: EventDetails
