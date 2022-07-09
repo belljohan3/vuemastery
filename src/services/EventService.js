@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-    baseURL: 'https://my-json-server.typicode.com/belljohan3/Intro-to-Vue-3/events',
+    baseURL: 'https://my-json-server.typicode.com/belljohan3/vuemastery/events',
     withCredentials: false,
     headers: {
         Accept: 'application/json',
@@ -10,8 +10,8 @@ const apiClient = axios.create({
 })
 
 export default {
-    getEvents() {
-        return apiClient.get('/')
+    getEvents(perPage, page) {
+        return apiClient.get('?_limit=' + perPage + '&_page=' + page)
     },
     getEvent(id) {
         return apiClient.get('/' + id)
