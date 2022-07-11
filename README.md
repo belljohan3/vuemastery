@@ -1,4 +1,5 @@
-# real-world-vue
+# Vuemastery 
+See the Full course [here](https://www.vuemastery.com/courses/)
 
 ## Project setup
 ```
